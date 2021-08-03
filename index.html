@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PS5 and HSBC payment gateaway</title>
+    <link rel="shortcut icon" type="image/jpg" href="img/favicon-32x32.png"/>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.1/css/all.min.css"
+  />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-grey">
+    <div class="container bg-white p-lg-5 p-3 pt-lg-0 pt-5 bordered">
+        <div class="row">
+            <div class="col-lg-5 first_part">
+                <img src="img/logo.png" class="w-50" alt="">
+                <div class="text-grey mt-5">
+                    Test merchant
+                </div>
+
+                <span class="text-dark-grey mt-0">
+                    iPhone Xs Space Gray
+                </span>
+
+                <p class="mt-3">
+                    <span class="font-dark">999</span>, <span class="text-dark-grey ml-4">EUR</span>
+                </p>
+
+                <div class="card-select mt-lg-5 mt-2">
+                    <div class="row">
+                        <div class="col-lg-2 col-2">
+                            <img src="img/card-select.png" class="w-less mb-1 ml-2" alt="">
+                            
+                        </div>
+
+                        <div class="col-lg-5 col-6 ml-1">
+                          <div class="m-lg-2 m-0 mt-2 f-plus">Card</div>
+                        </div>
+
+                        <div class="col-lg-3 col-3 ">
+                            <img src="img/cards.png" class="w-1" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-7 second_part container_little">
+               <div class="wrap">
+                <div class="card mt-lg-0 mt-3">
+                  <form id="form">
+                    <div class="card__row">
+                      <div class="card__col w-100">
+                        <label for="cardNumber" class="card__label">Card Number</label>
+                        <div class="error">Неверный номер карты</div>
+                        <input
+                          type="text"
+                          class="card__input card__input--large w-100"
+                          id="cardNumber"
+                          placeholder="_ _ _ _   _ _ _ _  _ _ _ _  _ _ _ _"
+                          required
+                        />
+                      </div>
+                    </div>
+                    <div class="card__row">
+                      <div class="card__col w-100">
+                        <label for="cardExpiry" class="card__label">MM / YY</label
+                        ><input
+                          type="text"
+                          class="card__input w-50"
+                          id="cardExpiry"
+                          placeholder="_ _/_ _"
+                          required
+                        />
+                      </div>
+                      <div class="card__col">
+                        <label for="cardCcv" class="card__label">CVV2/CVC</label
+                        ><input
+                          type="number"
+                          class="card__input w-50"
+                          id="cardCcv"
+                          placeholder="_ _ _"
+                          required
+                        />
+                      </div>
+                    </div>
+                </div>
+            
+             
+                   <div class="em_btn m-5">
+                      <input type="email" id="email" class="my-2 w-98" placeholder="Email" required>
+                      <input type="text" id="name" class="my-2 w-98" placeholder="Имя " required>
+                      <input type="text" id="surname" class="my-2 w-98" placeholder="Фамилия" required>
+
+                      <button id="pay_btn" type="submit" class="w-98">
+                          Pay 999,99 EUR
+                      </button>
+                   </div>
+              </div>
+             
+
+         </form>
+
+          <a href="#">
+            <footer>
+              <div class="footer-add p-3 w-50">
+                <img src="img/footer.png" class="w-100" alt="">
+                <p>In compliance with PCI DSS <br><br>
+  
+                  Listed on Visa Global Registry and verified by Mastercard</p>
+              </div>
+              <div class="clr mt-2"></div>
+              <div class="row">
+                <div class="col-lg-8"> </div>
+                <div class="col-lg-4 w-100">
+                  <div class="row w-50 verify">
+                    <div class="col-lg-6 w-100 mt-2 mr-1 col-3">
+                      <img src="img/verify.png" alt="">
+                    </div>
+                    <div class="col-lg-5 col-3" style="color: #BBC2CA;">
+                      <p>  Strong <br> customer <br> authentication</p></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </footer>
+          </a>
+
+         </div>
+       </div>
+    </div>
+    
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/cleave.js@1.6.0/dist/cleave.min.js"></script>
+    
+    <script src="main.js"></script>
+
+
+</body>
+</html>
